@@ -1,0 +1,156 @@
+/*
+  ==============================================================================
+
+  This is an automatically generated GUI class created by the Introjucer!
+
+  Be careful when adding custom code to these files, as only the code within
+  the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
+  and re-saved.
+
+  Created with Introjucer version: 3.2.0
+
+  ------------------------------------------------------------------------------
+
+  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
+  Copyright (c) 2015 - ROLI Ltd.
+
+  ==============================================================================
+*/
+
+//[Headers] You can add your own extra header files here...
+//[/Headers]
+
+#include "TimeComponent.h"
+
+
+//[MiscUserDefs] You can add your own user definitions and misc code here...
+//[/MiscUserDefs]
+
+//==============================================================================
+TimeComponent::TimeComponent ()
+{
+    //[Constructor_pre] You can add your own custom stuff here..
+    //[/Constructor_pre]
+
+    addAndMakeVisible (textButton = new TextButton ("Update Time"));
+    textButton->addListener (this);
+    textButton->setColour (TextButton::buttonColourId, Colours::black);
+    textButton->setColour (TextButton::buttonOnColourId, Colour (0xff3c3c3c));
+    textButton->setColour (TextButton::textColourOnId, Colours::yellow);
+    textButton->setColour (TextButton::textColourOffId, Colours::yellow);
+
+    addAndMakeVisible (label = new Label ("",
+                                          TRANS("")));
+    label->setFont (Font (15.00f, Font::plain));
+    label->setJustificationType (Justification::centred);
+    label->setEditable (false, false, false);
+    label->setColour (Label::backgroundColourId, Colours::black);
+    label->setColour (Label::textColourId, Colours::yellow);
+    label->setColour (TextEditor::textColourId, Colours::black);
+    label->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+
+    //[UserPreSize]
+    //[/UserPreSize]
+
+    setSize (600, 400);
+
+
+    //[Constructor] You can add your own custom stuff here..
+    //[/Constructor]
+}
+
+TimeComponent::~TimeComponent()
+{
+    //[Destructor_pre]. You can add your own custom destruction code here..
+    //[/Destructor_pre]
+
+    textButton = nullptr;
+    label = nullptr;
+
+
+    //[Destructor]. You can add your own custom destruction code here..
+    //[/Destructor]
+}
+
+//==============================================================================
+void TimeComponent::paint (Graphics& g)
+{
+    //[UserPrePaint] Add your own custom painting code here..
+    //[/UserPrePaint]
+
+    //[UserPaint] Add your own custom painting code here..
+    //[/UserPaint]
+}
+
+void TimeComponent::resized()
+{
+    //[UserPreResize] Add your own custom resize code here..
+    //[/UserPreResize]
+
+    textButton->setBounds (448, 0, 150, 24);
+    label->setBounds (448, 25, 150, 24);
+    //[UserResized] Add your own custom resize handling here..
+    //[/UserResized]
+}
+
+void TimeComponent::buttonClicked (Button* buttonThatWasClicked)
+{
+    //[UserbuttonClicked_Pre]
+    //[/UserbuttonClicked_Pre]
+
+    if (buttonThatWasClicked == textButton)
+    {
+        //[UserButtonCode_textButton] -- add your button handler code here..
+		const Time currentTime(Time::getCurrentTime());
+
+		const bool includeDate = true;
+		const bool includeTime = true;
+		const String currentTimeString(currentTime.toString(includeDate, includeTime));
+
+		label->setText(currentTimeString, dontSendNotification);
+        //[/UserButtonCode_textButton]
+    }
+
+    //[UserbuttonClicked_Post]
+    //[/UserbuttonClicked_Post]
+}
+
+
+
+//[MiscUserCode] You can add your own definitions of your custom methods or any other code here...
+//[/MiscUserCode]
+
+
+//==============================================================================
+#if 0
+/*  -- Introjucer information section --
+
+    This is where the Introjucer stores the metadata that describe this GUI layout, so
+    make changes in here at your peril!
+
+BEGIN_JUCER_METADATA
+
+<JUCER_COMPONENT documentType="Component" className="TimeComponent" componentName=""
+                 parentClasses="public Component" constructorParams="" variableInitialisers=""
+                 snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
+                 fixedSize="0" initialWidth="600" initialHeight="400">
+  <BACKGROUND backgroundColour="ffffff"/>
+  <TEXTBUTTON name="new button" id="7bf8d57856e257aa" memberName="textButton"
+              virtualName="" explicitFocusOrder="0" pos="448 0 150 24" bgColOff="ff000000"
+              bgColOn="ff3c3c3c" textCol="ffffff00" textColOn="ffffff00" buttonText="new button"
+              connectedEdges="0" needsCallback="1" radioGroupId="0"/>
+  <LABEL name="new label" id="b4ebdc0daa8541f6" memberName="label" virtualName=""
+         explicitFocusOrder="0" pos="448 32 150 24" bkgCol="ff000000"
+         textCol="ffffff00" edTextCol="ff000000" edBkgCol="0" labelText="label text"
+         editableSingleClick="0" editableDoubleClick="0" focusDiscardsChanges="0"
+         fontname="Default font" fontsize="15" bold="0" italic="0" justification="36"/>
+</JUCER_COMPONENT>
+
+END_JUCER_METADATA
+*/
+#endif
+
+
+//[EndFile] You can add extra defines here...
+//[/EndFile]

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="CRVy3l" name="BatComputer OS" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.BatComputerOS" includeBinaryInAppConfig="1"
+              jucerVersion="3.2.0">
+  <MAINGROUP id="yIJdCN" name="BatComputer OS">
+    <GROUP id="{4B0F5DAE-2FEF-D10B-979A-6C925D79C60B}" name="Source">
+      <FILE id="cALV8T" name="TimeComponent.cpp" compile="1" resource="0"
+            file="Source/TimeComponent.cpp"/>
+      <FILE id="uUrPjx" name="TimeComponent.h" compile="0" resource="0" file="Source/TimeComponent.h"/>
+      <FILE id="QKw93i" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="wICff4" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="EzCZ0F" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="BatComputer OS"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="BatComputer OS"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <CODEBLOCKS_WINDOWS targetFolder="Builds/CodeBlocksWindows">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="BatComputer OS"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="BatComputer OS"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../C++ Libraries/JUCE-WINDOWS/modules"/>
+      </MODULEPATHS>
+    </CODEBLOCKS_WINDOWS>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
