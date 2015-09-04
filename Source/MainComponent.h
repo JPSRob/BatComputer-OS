@@ -11,6 +11,8 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "TimeComponent.h"
+#include "Wallpaper.h"
+#include "Help.h"
 
 //==============================================================================
 /*
@@ -28,7 +30,9 @@ public:
     void resized();
 
 private:
+	Wallpaper wallpaper;
 	TimeComponent time;
+	Help help;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

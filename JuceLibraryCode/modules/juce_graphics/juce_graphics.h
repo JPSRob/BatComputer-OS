@@ -1,5 +1,5 @@
 // This is an auto-generated file to redirect any included
 // module headers to the correct external folder.
 
-#include "../../../../../../../../../C++ Libraries/JUCE-WINDOWS/modules/juce_graphics/juce_graphics.h"
+#include "../../../../../../../../C++ Libraries/JUCE-WINDOWS/modules/juce_graphics/juce_graphics.h"
 

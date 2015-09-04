@@ -22,6 +22,7 @@
 
 //[Headers]     -- You can add your own extra header files here --
 #include "JuceHeader.h"
+#include "Time.h"
 //[/Headers]
 
 
@@ -34,8 +35,7 @@
     Describe your class and how it works here!
                                                                     //[/Comments]
 */
-class TimeComponent  : public Component,
-                       public ButtonListener
+class TimeComponent  : public Component
 {
 public:
     //==============================================================================
@@ -44,20 +44,23 @@ public:
 
     //==============================================================================
     //[UserMethods]     -- You can add your own custom methods in this section.
+	void updateTime();
     //[/UserMethods]
 
     void paint (Graphics& g);
     void resized();
-    void buttonClicked (Button* buttonThatWasClicked);
 
+    // Binary resources:
+    static const char* bat_logo_png;
+    static const int bat_logo_pngSize;
 
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
+	bool stopTheClock;
     //[/UserVariables]
 
     //==============================================================================
-    ScopedPointer<TextButton> textButton;
     ScopedPointer<Label> label;
 
 

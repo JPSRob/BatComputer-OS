@@ -1,0 +1,13 @@
+Welcome to BatComputer OS!
+Ver. 0.02
+
+Help Information:
+
+- Clock
+   Located in the upper-right corner of the display.
+   No action necessary, it will work on it's own!
+- Version Number
+   Located in the bottom-right corner of the display.
+   Informs you of the current version of the OS.
+- Help Button
+   Press Help Button to toggle this Window!

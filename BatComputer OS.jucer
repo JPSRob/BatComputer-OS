@@ -5,9 +5,15 @@
               jucerVersion="3.2.0">
   <MAINGROUP id="yIJdCN" name="BatComputer OS">
     <GROUP id="{4B0F5DAE-2FEF-D10B-979A-6C925D79C60B}" name="Source">
-      <FILE id="cALV8T" name="TimeComponent.cpp" compile="1" resource="0"
+      <FILE id="NRnMVi" name="HelpText.cpp" compile="1" resource="0" file="Source/HelpText.cpp"/>
+      <FILE id="v9j6jy" name="HelpText.h" compile="0" resource="0" file="Source/HelpText.h"/>
+      <FILE id="rxCBEK" name="Help.cpp" compile="1" resource="0" file="Source/Help.cpp"/>
+      <FILE id="D8Yp8L" name="Help.h" compile="0" resource="0" file="Source/Help.h"/>
+      <FILE id="V5BboS" name="Wallpaper.cpp" compile="1" resource="0" file="Source/Wallpaper.cpp"/>
+      <FILE id="sT2xTg" name="Wallpaper.h" compile="0" resource="0" file="Source/Wallpaper.h"/>
+      <FILE id="tsZ57H" name="TimeComponent.cpp" compile="1" resource="0"
             file="Source/TimeComponent.cpp"/>
-      <FILE id="uUrPjx" name="TimeComponent.h" compile="0" resource="0" file="Source/TimeComponent.h"/>
+      <FILE id="S3PFQP" name="TimeComponent.h" compile="0" resource="0" file="Source/TimeComponent.h"/>
       <FILE id="QKw93i" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
       <FILE id="wICff4" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
