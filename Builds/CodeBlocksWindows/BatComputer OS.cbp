@@ -94,6 +94,30 @@
       <Add library="kernel32"/>
       <Add library="comctl32"/>
     </Linker>
+    <Unit filename="../../Source/PCBEnums.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../Source/PCBController.cpp"/>
+    <Unit filename="../../Source/PCBController.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../Source/PCBQueue.cpp"/>
+    <Unit filename="../../Source/PCBQueue.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../Source/PCBNode.cpp"/>
+    <Unit filename="../../Source/PCBNode.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
+    <Unit filename="../../Source/PCB.cpp"/>
+    <Unit filename="../../Source/PCB.h">
+      <Option compile="0"/>
+      <Option link="0"/>
+    </Unit>
     <Unit filename="../../Source/Display.cpp"/>
     <Unit filename="../../Source/Display.h">
       <Option compile="0"/>

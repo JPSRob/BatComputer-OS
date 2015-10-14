@@ -301,6 +301,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\PCBController.cpp">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PCBQueue.cpp">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PCBNode.cpp">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PCB.cpp">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Display.cpp">
       <Filter>BatComputer OS\Source</Filter>
     </ClCompile>
@@ -1536,6 +1548,21 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\PCBEnums.h">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PCBController.h">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PCBQueue.h">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PCBNode.h">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PCB.h">
+      <Filter>BatComputer OS\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Display.h">
       <Filter>BatComputer OS\Source</Filter>
     </ClInclude>

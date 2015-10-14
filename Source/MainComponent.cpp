@@ -30,7 +30,7 @@ void MainContentComponent::paint (Graphics& g)
 
     g.setFont (Font (16.0f));
     g.setColour (Colours::yellow);
-    g.drawText ("BatComputer OS - Ver 0.03", getLocalBounds(), Justification::bottomRight, true);
+    g.drawText ("BatComputer OS - Ver 0.04", getLocalBounds(), Justification::bottomRight, true);
 	
 }
 

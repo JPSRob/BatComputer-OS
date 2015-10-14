@@ -35,7 +35,7 @@ DirectoryText::DirectoryText ()
 	HANDLE hFind;
 	WIN32_FIND_DATA data;
 
-	hFind = FindFirstFile("C:\\Users\\Big Blue\\Desktop\\BatComputer-OS\\Source\\*.*", &data);
+	hFind = FindFirstFile("C:\\Users\\Big Blue\\Desktop\\BatComputer-OS ver 0_04\\Source\\*.*", &data);
 	if (hFind != INVALID_HANDLE_VALUE) {
 		do {
 			directoryString = (directoryString + data.cFileName + ", ");

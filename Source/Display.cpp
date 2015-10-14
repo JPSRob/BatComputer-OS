@@ -81,7 +81,7 @@ void Display::paint (Graphics& g)
 {
     //[UserPrePaint] Add your own custom painting code here..
     //[/UserPrePaint]
-	g.fillAll(Colours::transparentBlack);
+
     //[UserPaint] Add your own custom painting code here..
     //[/UserPaint]
 }
@@ -91,13 +91,9 @@ void Display::resized()
     //[UserPreResize] Add your own custom resize code here..
     //[/UserPreResize]
 
-	///Button bounds:
     helpButton->setBounds (0, 0, 56, 24);
-    directoryButton->setBounds (60, 0, 64, 24);
-
-	///viewport bounds:
-	viewport->setBoundsRelative(.01, .10, .94, .86);
-
+    viewport->setBounds (0, 32, proportionOfWidth (0.9000f), proportionOfHeight (0.9005f));
+    directoryButton->setBounds (64, 0, 64, 24);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -121,7 +117,7 @@ void Display::buttonClicked (Button* buttonThatWasClicked)
 
 			helpText.setVisible(false);
 			directoryText.setVisible(false);
-			
+
 			viewport->setVisible(false);
 		}
         //[/UserButtonCode_helpButton]

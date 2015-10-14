@@ -5,6 +5,16 @@
               jucerVersion="3.2.0">
   <MAINGROUP id="yIJdCN" name="BatComputer OS">
     <GROUP id="{4B0F5DAE-2FEF-D10B-979A-6C925D79C60B}" name="Source">
+      <FILE id="Ov6Cef" name="PCBEnums.h" compile="0" resource="0" file="Source/PCBEnums.h"/>
+      <FILE id="zdEzxp" name="PCBController.cpp" compile="1" resource="0"
+            file="Source/PCBController.cpp"/>
+      <FILE id="QlAaOH" name="PCBController.h" compile="0" resource="0" file="Source/PCBController.h"/>
+      <FILE id="CZHDS2" name="PCBQueue.cpp" compile="1" resource="0" file="Source/PCBQueue.cpp"/>
+      <FILE id="kGuT2k" name="PCBQueue.h" compile="0" resource="0" file="Source/PCBQueue.h"/>
+      <FILE id="lOx8Mr" name="PCBNode.cpp" compile="1" resource="0" file="Source/PCBNode.cpp"/>
+      <FILE id="aTRpxF" name="PCBNode.h" compile="0" resource="0" file="Source/PCBNode.h"/>
+      <FILE id="KsRU85" name="PCB.cpp" compile="1" resource="0" file="Source/PCB.cpp"/>
+      <FILE id="CMZY9R" name="PCB.h" compile="0" resource="0" file="Source/PCB.h"/>
       <FILE id="sNYFAg" name="Display.cpp" compile="1" resource="0" file="Source/Display.cpp"/>
       <FILE id="wGl48w" name="Display.h" compile="0" resource="0" file="Source/Display.h"/>
       <FILE id="axDHlQ" name="DirectoryText.cpp" compile="1" resource="0"

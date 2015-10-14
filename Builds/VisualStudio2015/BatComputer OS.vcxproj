@@ -129,6 +129,10 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\PCBController.cpp"/>
+    <ClCompile Include="..\..\Source\PCBQueue.cpp"/>
+    <ClCompile Include="..\..\Source\PCBNode.cpp"/>
+    <ClCompile Include="..\..\Source\PCB.cpp"/>
     <ClCompile Include="..\..\Source\Display.cpp"/>
     <ClCompile Include="..\..\Source\DirectoryText.cpp"/>
     <ClCompile Include="..\..\Source\HelpText.cpp"/>
@@ -1249,6 +1253,11 @@
     <ClCompile Include="..\..\..\..\..\..\C++ Libraries\JUCE-WINDOWS\modules\juce_video\juce_video.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\PCBEnums.h"/>
+    <ClInclude Include="..\..\Source\PCBController.h"/>
+    <ClInclude Include="..\..\Source\PCBQueue.h"/>
+    <ClInclude Include="..\..\Source\PCBNode.h"/>
+    <ClInclude Include="..\..\Source\PCB.h"/>
     <ClInclude Include="..\..\Source\Display.h"/>
     <ClInclude Include="..\..\Source\DirectoryText.h"/>
     <ClInclude Include="..\..\Source\HelpText.h"/>
