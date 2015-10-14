@@ -75,8 +75,6 @@ void TimeComponent::paint (Graphics& g)
 
     //[/UserPrePaint]
 
-    g.fillAll (Colours::transparentBlack);
-
     //[UserPaint] Add your own custom painting code here..
     //[/UserPaint]
 }
@@ -86,8 +84,7 @@ void TimeComponent::resized()
     //[UserPreResize] Add your own custom resize code here..
     //[/UserPreResize]
 
-    label->setBounds (416, 0, 150, 24);
-	//label->setTopRightPosition()
+    label->setBounds (472, 0, 94, 24);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -99,7 +96,7 @@ void TimeComponent::updateTime() {
 	const Time currentTime(Time::getCurrentTime());
 
 	const bool includeDate = true;
-	const bool includeTime = true;
+	const bool includeTime = false;
 	const String currentTimeString(currentTime.toString(includeDate, includeTime));
 
 	label->setText(currentTimeString, dontSendNotification);
@@ -120,9 +117,9 @@ BEGIN_JUCER_METADATA
                  parentClasses="public Component" constructorParams="" variableInitialisers=""
                  snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
                  fixedSize="0" initialWidth="600" initialHeight="400">
-  <BACKGROUND backgroundColour="ffffffff"/>
+  <BACKGROUND backgroundColour="ffffff"/>
   <LABEL name="new label" id="c345e283f55c662a" memberName="label" virtualName=""
-         explicitFocusOrder="0" pos="416 0 150 24" bkgCol="ff000000" textCol="ffffff00"
+         explicitFocusOrder="0" pos="472 0 94 24" bkgCol="ff000000" textCol="ffffff00"
          outlineCol="ffffff00" edTextCol="ffffff00" edBkgCol="ff000000"
          labelText="" editableSingleClick="0" editableDoubleClick="0"
          focusDiscardsChanges="0" fontname="Default font" fontsize="15"

@@ -43,9 +43,7 @@ HelpText::HelpText ()
                                           "   No action necessary, it will work on it\'s own!\n"
                                           "- Version Number\n"
                                           "   Located in the bottom-right corner of the display.\n"
-                                          "   Informs you of the current version of the OS.\n"
-										  "- Help Button\n"
-										  "   Press Help Button to toggle this window!")));
+                                          "   Informs you of the current version of the OS.")));
     label->setFont (Font (15.00f, Font::plain));
     label->setJustificationType (Justification::centredLeft);
     label->setEditable (false, false, false);
@@ -84,8 +82,6 @@ void HelpText::paint (Graphics& g)
     //[UserPrePaint] Add your own custom painting code here..
     //[/UserPrePaint]
 
-    g.fillAll (Colours::transparentBlack);
-
     //[UserPaint] Add your own custom painting code here..
     //[/UserPaint]
 }
@@ -95,7 +91,7 @@ void HelpText::resized()
     //[UserPreResize] Add your own custom resize code here..
     //[/UserPreResize]
 
-    label->setBounds (0, 0, 150, 360);
+    label->setBounds (0, 0, 344, 208);
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -119,9 +115,9 @@ BEGIN_JUCER_METADATA
                  parentClasses="public Component" constructorParams="" variableInitialisers=""
                  snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
                  fixedSize="0" initialWidth="600" initialHeight="400">
-  <BACKGROUND backgroundColour="ffffffff"/>
+  <BACKGROUND backgroundColour="ffffff"/>
   <LABEL name="new label" id="5d6499245f2045ed" memberName="label" virtualName=""
-         explicitFocusOrder="0" pos="0 0 150 312" bkgCol="ff000000" textCol="ffffff00"
+         explicitFocusOrder="0" pos="0 0 344 208" bkgCol="ff000000" textCol="ffffff00"
          outlineCol="ffffff00" edTextCol="ffffff00" edBkgCol="ff000000"
          labelText="Welcome to BatComputer OS!&#10;Ver. 0.02&#10;&#10;Help Information:&#10;&#10;- Clock&#10;   Located in the upper-right corner of the display.&#10;   No action necessary, it will work on it's own!&#10;- Version Number&#10;   Located in the bottom-right corner of the display.&#10;   Informs you of the current version of the OS."
          editableSingleClick="0" editableDoubleClick="0" focusDiscardsChanges="0"

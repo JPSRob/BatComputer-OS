@@ -12,11 +12,12 @@
 //==============================================================================
 MainContentComponent::MainContentComponent()
 {
-	addAndMakeVisible(time);
 	addAndMakeVisible(wallpaper);
-	addAndMakeVisible(help);
+	addAndMakeVisible(time);
+	addAndMakeVisible(display);
+	display.toFront(true);
 	
-    setSize (800, 600);
+    setSize (650, 450);
 }
 
 MainContentComponent::~MainContentComponent()
@@ -29,7 +30,7 @@ void MainContentComponent::paint (Graphics& g)
 
     g.setFont (Font (16.0f));
     g.setColour (Colours::yellow);
-    g.drawText ("BatComputer OS - Ver 0.02", getLocalBounds(), Justification::bottomRight, true);
+    g.drawText ("BatComputer OS - Ver 0.03", getLocalBounds(), Justification::bottomRight, true);
 	
 }
 
@@ -39,6 +40,8 @@ void MainContentComponent::resized()
     // If you add any child components, this is where you should
     // update their positions.
 	time.setTopRightPosition( (getWidth() + 34), 0 );
-	wallpaper.setBoundsRelative(0.31, 0.31, 0.5, 0.5);
-	wallpaper.broughtToFront();
+	wallpaper.setBoundsRelative(0.22, 0.22, 1, 1);
+	display.setBoundsRelative(0, 0, 1, 1);
+	//display.setTopLeftPosition((0, 0);
+	//wallpaper.broughtToFront();
 }

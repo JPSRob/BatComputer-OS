@@ -12,7 +12,7 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "TimeComponent.h"
 #include "Wallpaper.h"
-#include "Help.h"
+#include "Display.h"
 
 //==============================================================================
 /*
@@ -32,7 +32,8 @@ public:
 private:
 	Wallpaper wallpaper;
 	TimeComponent time;
-	Help help;
+	Display display; //Will contain buttons for functionality and the text display for these functions
+
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
 };

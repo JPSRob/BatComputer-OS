@@ -61,8 +61,6 @@ void Wallpaper::paint (Graphics& g)
     //[UserPrePaint] Add your own custom painting code here..
     //[/UserPrePaint]
 
-    g.fillAll (Colours::transparentBlack);
-
     g.setColour (Colours::black);
     g.drawImage (cachedImage_bat_logo_png_1,
                  36, 4, 300, 300,
@@ -100,7 +98,7 @@ BEGIN_JUCER_METADATA
                  parentClasses="public Component" constructorParams="" variableInitialisers=""
                  snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
                  fixedSize="0" initialWidth="600" initialHeight="400">
-  <BACKGROUND backgroundColour="ffffffff">
+  <BACKGROUND backgroundColour="ffffff">
     <IMAGE pos="36 4 300 300" resource="bat_logo_png" opacity="1" mode="0"/>
   </BACKGROUND>
 </JUCER_COMPONENT>
